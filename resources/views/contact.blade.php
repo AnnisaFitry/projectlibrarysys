@@ -17,38 +17,16 @@
               </div>
               <div class="card-body">
                 <p class="pb-3">
-                  For further questions, including partnership opportunities, please email hello@creative-tim.com
-                  or contact using our contact form.
+                  <b>Library Sys</b></br>
+                  Politeknik Negeri Malang</br>
+                  Gedung Teknik Sipil lt.6</br>
+                  Jl. Soekarno Hatta No. 9, Jatimulyo,</br>
+                  Lowokwaru, Malang, Jawa Timur 65141</br>
+                  </br>
+                  Hubungi Kami: (0341) 404424</br>
+                  +62 822 6455 9239 (Annisa)</br>
+                  +62 821 4534 5250 (Rofika)
                 </p>
-                <form id="contact-form" method="post" autocomplete="off">
-                  <div class="card-body p-0 my-3">
-                    <div class="row">
-                      <div class="col-md-6">
-                        <div class="input-group input-group-static mb-4">
-                          <label>Full Name</label>
-                          <input type="email" class="form-control" placeholder="Full Name">
-                        </div>
-                      </div>
-                      <div class="col-md-6 ps-md-2">
-                        <div class="input-group input-group-static mb-4">
-                          <label>Email</label>
-                          <input type="email" class="form-control" placeholder="hello@creative-tim.com">
-                        </div>
-                      </div>
-                    </div>
-                    <div class="form-group mb-0 mt-md-0 mt-4">
-                      <div class="input-group input-group-static mb-4">
-                        <label>How can we help you?</label>
-                        <textarea name="message" class="form-control" id="message" rows="6" placeholder="Describe your problem in at least 250 characters"></textarea>
-                      </div>
-                    </div>
-                    <div class="row">
-                      <div class="col-md-12 text-center">
-                        <button type="submit" class="btn bg-gradient-primary mt-3 mb-0">Send Message</button>
-                      </div>
-                    </div>
-                  </div>
-                </form>
               </div>
             </div>
           </div>

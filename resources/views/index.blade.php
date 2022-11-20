@@ -7,8 +7,8 @@
       <div class="container">
         <div class="row">
           <div class="col-lg-7 text-center mx-auto">
-            <h1 class="text-white pt-3 mt-n5">Material Kit 2</h1>
-            <p class="lead text-white mt-3">Free & Open Source Web UI Kit built over Bootstrap 5. <br/> Join over 1.6 million developers around the world. </p>
+            <h1 class="text-white pt-3 mt-n5">Library Sys</h1>
+            <p class="lead text-white mt-3">Platform Digitalisasi Perpustakaan Indonesia<br/></p>
           </div>
         </div>
       </div>
@@ -22,25 +22,25 @@
           <div class="row">
             <div class="col-md-4 position-relative">
               <div class="p-3 text-center">
-                <h1 class="text-gradient text-primary"><span id="state1" countTo="70">0</span>+</h1>
-                <h5 class="mt-3">Coded Elements</h5>
-                <p class="text-sm font-weight-normal">From buttons, to inputs, navbars, alerts or cards, you are covered</p>
+                <h1 class="text-gradient text-primary"><span id="state1" countTo="313">0</span>+</h1>
+                <h5 class="mt-3">Anggota</h5>
+                <p class="text-sm font-weight-normal">dari berbagai daerah di Indonesia</p>
               </div>
               <hr class="vertical dark">
             </div>
             <div class="col-md-4 position-relative">
               <div class="p-3 text-center">
                 <h1 class="text-gradient text-primary"> <span id="state2" countTo="15">0</span>+</h1>
-                <h5 class="mt-3">Design Blocks</h5>
-                <p class="text-sm font-weight-normal">Mix the sections, change the colors and unleash your creativity</p>
+                <h5 class="mt-3">Perpustakaan</h5>
+                <p class="text-sm font-weight-normal">yang tersebar di beberapa daerah di Indonesia</p>
               </div>
               <hr class="vertical dark">
             </div>
             <div class="col-md-4">
               <div class="p-3 text-center">
-                <h1 class="text-gradient text-primary" id="state3" countTo="4">0</h1>
-                <h5 class="mt-3">Pages</h5>
-                <p class="text-sm font-weight-normal">Save 3-4 weeks of work when you use our pre-made pages for your website</p>
+              <h1 class="text-gradient text-primary"> <span id="state3" countTo="3300">0</span>+</h1>
+                <h5 class="mt-3">Buku</h5>
+                <p class="text-sm font-weight-normal">dengan berbagai kategori dan pengarang</p>
               </div>
             </div>
           </div>
@@ -57,15 +57,15 @@
               <div class="front front-background" style="background-image: url(https://images.unsplash.com/photo-1569683795645-b62e50fbf103?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=987&q=80); background-size: cover;">
                 <div class="card-body py-7 text-center">
                   <i class="material-icons text-white text-4xl my-3">touch_app</i>
-                  <h3 class="text-white">Feel the <br/> Material Kit</h3>
-                  <p class="text-white opacity-8">All the Bootstrap components that you need in a development have been re-design with the new look.</p>
+                  <h3 class="text-white">Daftarkan Perpustakaan Anda <br/> </h3>
+                  <p class="text-white opacity-8">Mari sama-sama daftarkan perpustakaan kita untuk mewujudkan digitalisasi perpustakaan <br/>dengan Library Sys</p>
                 </div>
               </div>
               <div class="back back-background" style="background-image: url(https://images.unsplash.com/photo-1498889444388-e67ea62c464b?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1365&q=80); background-size: cover;">
                 <div class="card-body pt-7 text-center">
-                  <h3 class="text-white">Discover More</h3>
-                  <p class="text-white opacity-8"> You will save a lot of time going from prototyping to full-functional code because all elements are implemented.</p>
-                  <a href=".//sections/page-sections/hero-sections.html" target="_blank" class="btn btn-white btn-sm w-50 mx-auto mt-3">Start with Headers</a>
+                  <h3 class="text-white">Temukan Lebih Banyak</h3>
+                  <p class="text-white opacity-8"> Daftarkan perpustakaan untuk memperoleh fitur-fitur <br/>pustakawan di platform ini</p>
+                  <a href=".//sections/page-sections/hero-sections.html" target="_blank" class="btn btn-white btn-sm w-50 mx-auto mt-3">Daftar</a>
                 </div>
               </div>
             </div>
@@ -75,30 +75,30 @@
           <div class="row justify-content-start">
             <div class="col-md-6">
               <div class="info">
-                <i class="material-icons text-gradient text-primary text-3xl">content_copy</i>
-                <h5 class="font-weight-bolder mt-3">Full Documentation</h5>
-                <p class="pe-5">Built by developers for developers. Check the foundation and you will find everything inside our documentation.</p>
+                <i class="material-icons text-gradient text-primary text-3xl">all_inclusive</i>
+                <h5 class="font-weight-bolder mt-3">Ruang dan Waktu Tanpa Batas</h5>
+                <p class="pe-5">Perpustakaan digital dapat diakses dari mana saja dan kapan saja dengan catatan ada jaringan komputer</p>
               </div>
             </div>
             <div class="col-md-6">
               <div class="info">
-                <i class="material-icons text-gradient text-primary text-3xl">flip_to_front</i>
-                <h5 class="font-weight-bolder mt-3">Bootstrap 5 Ready</h5>
-                <p class="pe-3">The world’s most popular front-end open source toolkit, featuring Sass variables and mixins.</p>
+                <i class="material-icons text-gradient text-primary text-3xl">travel_explore</i>
+                <h5 class="font-weight-bolder mt-3">Intuitif</h5>
+                <p class="pe-3">Perpustakaan digital telah mengembangkan berbagai fitur pencarian yang memfasilitasi akses ke informasi dan koleksi data</p>
               </div>
             </div>
           </div>
-          <div class="row justify-content-start mt-5">
+          <div class="row justify-content-start mt-1">
             <div class="col-md-6 mt-3">
-              <i class="material-icons text-gradient text-primary text-3xl">price_change</i>
-              <h5 class="font-weight-bolder mt-3">Save Time & Money</h5>
-              <p class="pe-5">Creating your design from scratch with dedicated designers can be very expensive. Start with our Design System.</p>
+              <i class="material-icons text-gradient text-primary text-3xl">accessibility</i>
+              <h5 class="font-weight-bolder mt-3">Aksesibilitas</h5>
+              <p class="pe-5">Pustakawan dapat selalu memantau ketersediaan atau keberadaan koleksinya serta dengan mudah mengetahui daftar koleksi perpustakaan yang baru.</p>
             </div>
             <div class="col-md-6 mt-3">
               <div class="info">
                 <i class="material-icons text-gradient text-primary text-3xl">devices</i>
-                <h5 class="font-weight-bolder mt-3">Fully Responsive</h5>
-                <p class="pe-3">Regardless of the screen size, the website content will naturally fit the given resolution.</p>
+                <h5 class="font-weight-bolder mt-3">Responsif</h5>
+                <p class="pe-3">Terlepas dari ukuran layarnya, konten platform secara alami akan sesuai dengan resolusi yang diberikan.</p>
               </div>
             </div>
           </div>
@@ -208,24 +208,7 @@
           </div>
         </div>
       </div>
-      <hr class="horizontal dark my-5">
-      <div class="row">
-        <div class="col-lg-2 col-md-4 col-6 ms-auto">
-          <img class="w-100 opacity-6" src="./assets/img/logos/gray-logos/logo-apple.svg" alt="Logo">
-        </div>
-        <div class="col-lg-2 col-md-4 col-6">
-          <img class="w-100 opacity-6" src="./assets/img/logos/gray-logos/logo-facebook.svg" alt="Logo">
-        </div>
-        <div class="col-lg-2 col-md-4 col-6">
-          <img class="w-100 opacity-6" src="./assets/img/logos/gray-logos/logo-nasa.svg" alt="Logo">
-        </div>
-        <div class="col-lg-2 col-md-4 col-6 ms-lg-0 ms-md-auto">
-          <img class="w-100 opacity-6" src="./assets/img/logos/gray-logos/logo-vodafone.svg" alt="Logo">
-        </div>
-        <div class="col-lg-2 col-md-4 col-6 me-md-auto mx-md-0 mx-auto">
-          <img class="w-100 opacity-6" src="./assets/img/logos/gray-logos/logo-digitalocean.svg" alt="Logo">
-        </div>
-      </div>
+      
     </div>
   </section>
   </div>
