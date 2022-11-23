@@ -7,8 +7,8 @@
       <div class="container">
         <div class="row justify-content-center">
           <div class="col-lg-8 text-center mx-auto my-auto">
-            <h1 class="text-white">Work with an amazing design</h1>
-            <p class="lead mb-4 text-white opacity-8">We’re constantly trying to express ourselves and actualize our dreams. If you have the opportunity to play this game</p>
+            <h1 class="text-white">Library Sys</h1>
+            <p class="lead mb-4 text-white opacity-8">Platform pendataan data buku perpustakaan, pendataan anggota perpustakaan, serta pendataan pinjam-meminjam buku perpustakaan.</p>
           </div>
         </div>
       </div>
@@ -127,48 +127,7 @@
             </div>
           </div>
         </div>
-        <div class="row mt-4">
-          <div class="col-lg-6 col-12">
-            <div class="card card-profile mt-4 z-index-2">
-              <div class="row">
-                <div class="col-lg-4 col-md-6 col-12 mt-n5">
-                  <a href="javascript:;">
-                    <div class="p-3 pe-md-0">
-                      <img class="w-100 border-radius-md shadow-lg" src="../assets/img/ivana-squares.jpg" alt="image">
-                    </div>
-                  </a>
-                </div>
-                <div class="col-lg-8 col-md-6 col-12 my-auto">
-                  <div class="card-body ps-lg-0">
-                    <h5 class="mb-0">Ivana Flow</h5>
-                    <h6 class="text-info">Athlete</h6>
-                    <p class="mb-0">Artist is a term applied to a person who engages in an activity deemed to be an art.</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-6 col-12">
-            <div class="card card-profile mt-lg-4 mt-5 z-index-2">
-              <div class="row">
-                <div class="col-lg-4 col-md-6 col-12 mt-n5">
-                  <a href="javascript:;">
-                    <div class="p-3 pe-md-0">
-                      <img class="w-100 border-radius-md shadow-lg" src="../assets/img/ivana-square.jpg" alt="image">
-                    </div>
-                  </a>
-                </div>
-                <div class="col-lg-8 col-md-6 col-12 my-auto">
-                  <div class="card-body ps-lg-0">
-                    <h5 class="mb-0">Marquez Garcia</h5>
-                    <h6 class="text-info">JS Developer</h6>
-                    <p class="mb-0">Artist is a term applied to a person who engages in an activity deemed to be an art.</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+        
       </div>
     </section>
     <!-- -------- END Features w/ pattern background & stats & rocket -------- -->
