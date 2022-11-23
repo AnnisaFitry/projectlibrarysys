@@ -229,4 +229,5 @@
     </div>
   </section>
   </div>
+  @include('partials.footer-2')
 @endsection
