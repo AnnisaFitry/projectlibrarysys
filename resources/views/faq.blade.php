@@ -64,7 +64,7 @@
     </div>
   </div>
   <!-- -------- END Content Presentation Docs ------- -->
-  <section class="py-sm-7" id="download-soft-ui">
+  {{-- <section class="py-sm-7" id="download-soft-ui">
     <div class="bg-gradient-dark position-relative m-3 border-radius-xl overflow-hidden">
       <img src="./assets/img/shapes/waves-white.svg" alt="pattern-lines" class="position-absolute start-0 top-md-0 w-100 opacity-2">
       <div class="container py-7 postion-relative z-index-2 position-relative">
@@ -167,5 +167,6 @@
         </div>
       </div>
     </div>
-  </div>
+  </div> --}}
+  @include('partials.footer')
 @endsection

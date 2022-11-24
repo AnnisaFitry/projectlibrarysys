@@ -65,7 +65,7 @@
                 <div class="card-body pt-7 text-center">
                   <h3 class="text-white">Temukan Lebih Banyak</h3>
                   <p class="text-white opacity-8"> Daftarkan perpustakaan untuk memperoleh fitur-fitur <br/>pustakawan di platform ini</p>
-                  <a href=".//sections/page-sections/hero-sections.html" target="_blank" class="btn btn-white btn-sm w-50 mx-auto mt-3">Daftar</a>
+                  <a href="{{ route('cari-perpus') }}" class="btn btn-white btn-sm w-50 mx-auto mt-3">Daftar</a>
                 </div>
               </div>
             </div>
@@ -111,27 +111,28 @@
       <div class="row">
         <div class="row justify-content-center text-center my-sm-5">
           <div class="col-lg-6">
-            <span class="badge bg-primary mb-3">Infinite combinations</span>
-            <h2 class="text-dark mb-0">Huge collection of sections</h2>
-            <p class="lead">We have created multiple options for you to put together and customise into pixel perfect pages. </p>
-          </div>
-        </div>
-      </div>
-    </div>
-  <section class="py-5">
-    <div class="container">
-      <div class="row">
-        <div class="row text-center my-sm-5 mt-5">
-          <div class="col-lg-6 mx-auto">
-            <span class="badge bg-primary mb-3">Boost creativity</span>
-            <h2 class="">With our coded pages</h2>
-            <p class="lead">The easiest way to get started is to use one of our <br /> pre-built example pages. </p>
+            <span class="badge bg-primary mb-3">Fitur Anggota</span>
+            <h2 class="text-dark mb-0">Kartu Digital Keanggotaan</h2>
+            <p class="lead">Kami memberikan tampilan menarik serta terdapat notifikasi pengembalian untuk Anggota yang meminjam. </p>
           </div>
         </div>
       </div>
     </div>
   </section>
-  <section class="py-7">
+  <section class="py-5">
+    <div class="container">
+      <div class="row">
+        <div class="row text-center my-sm-5 mt-5">
+          <div class="col-lg-6 mx-auto">
+            <span class="badge bg-primary mb-3">Fitur Pustakawan</span>
+            <h2 class="">Penyimpanan Digital</h2>
+            <p class="lead">Kami menyediakan penyimpanan dan pelaporan data <br /> perpustakaan berbasis website. </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  {{-- <section class="py-7">
     <div class="container">
       <div class="row">
         <div class="col-lg-6 mx-auto text-center">
@@ -210,7 +211,7 @@
       </div>
       
     </div>
-  </section>
+  </section> --}}
   </div>
-  @include('partials.footer-2')
+  @include('partials.footer')
 @endsection

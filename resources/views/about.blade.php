@@ -204,4 +204,5 @@
     </section>
     <!-- -------- END PRE-FOOTER 1 w/ SUBSCRIBE BUTTON AND IMAGE ------- -->
   </div>
+  @include('partials.footer')
 @endsection

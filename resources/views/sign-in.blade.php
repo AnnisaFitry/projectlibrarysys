@@ -10,7 +10,7 @@
           <div class="card z-index-0 fadeIn3 fadeInBottom">
             <div class="card-header p-0 position-relative mt-n4 mx-3 z-index-2">
               <div class="bg-gradient-primary shadow-primary border-radius-lg py-3 pe-1">
-                <h4 class="text-white font-weight-bolder text-center mt-2 mb-0">Masuk</h4>
+                <h4 class="text-white font-weight-bolder text-center mt-2 mb-0">Library Sys</h4>
               </div>
             </div>
             <div class="card-body">
@@ -22,16 +22,20 @@
                 <div class="input-group input-group-outline mb-3">
                   <label class="form-label">Password</label>
                   <input type="password" class="form-control">
+                  
                 </div>
-                <div class="form-check form-switch d-flex align-items-center mb-3">
+                <div class="form-check form-switch d-flex align-items-center mb-2">
                   <input class="form-check-input" type="checkbox" id="rememberMe" checked>
                   <label class="form-check-label mb-0 ms-3" for="rememberMe">Remember me</label>
+                  <p class="form-check-label mb-0" style="font-family: Helvetica, Arial, sans-serif; font-size: 0.875rem;">
+                    <a href="{{ route('forgot') }}">Lupa Password?</a>
+                  </p>
                 </div>
                 <div class="text-center">
                   <button type="button" class="btn bg-gradient-primary w-100 my-4 mb-2">Masuk</button>
                 </div>
                 <p class="mt-4 text-sm text-center">
-                  Don't have an account?
+                  Tidak memiliki akun? <a href="{{ route('sign-up') }}">Daftar</a>
                 </p>
               </form>
             </div>
