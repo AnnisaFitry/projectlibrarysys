@@ -2,7 +2,7 @@
 @include('partials.nav-index')
 @section('content')  
   <header class="header-2">
-    <div class="page-header min-vh-75 relative" style="background-image: url('./assets/img/bg2.jpg')">
+    <div class="page-header min-vh-75 relative" style="background-image: url('./assets/img/sign-in.jpg')">
       <span class="mask bg-gradient-primary opacity-4"></span>
       <div class="container">
         <div class="row">
@@ -54,14 +54,14 @@
         <div class="col-lg-4 ms-auto me-auto p-lg-4 mt-lg-0 mt-4">
           <div class="rotating-card-container">
             <div class="card card-rotate card-background card-background-mask-primary shadow-primary mt-md-0 mt-5">
-              <div class="front front-background" style="background-image: url(https://images.unsplash.com/photo-1569683795645-b62e50fbf103?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=987&q=80); background-size: cover;">
+              <div class="front front-background" style="background-image: url(../assets/img/index_card1.jpg); background-size: cover;">
                 <div class="card-body py-7 text-center">
                   <i class="material-icons text-white text-4xl my-3">touch_app</i>
                   <h3 class="text-white">Daftarkan Perpustakaan Anda <br/> </h3>
                   <p class="text-white opacity-8">Mari sama-sama daftarkan perpustakaan kita untuk mewujudkan digitalisasi perpustakaan <br/>dengan Library Sys</p>
                 </div>
               </div>
-              <div class="back back-background" style="background-image: url(https://images.unsplash.com/photo-1498889444388-e67ea62c464b?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1365&q=80); background-size: cover;">
+              <div class="back back-background" style="background-image: url(../assets/img/index_card2.jpg); background-size: cover;">
                 <div class="card-body pt-7 text-center">
                   <h3 class="text-white">Temukan Lebih Banyak</h3>
                   <p class="text-white opacity-8"> Daftarkan perpustakaan untuk memperoleh fitur-fitur <br/>pustakawan di platform ini</p>

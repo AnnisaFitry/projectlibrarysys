@@ -11,21 +11,21 @@
         <div class="col col-lg-2 mb-2">
           <div class="text-center">
             <a class="nav-link" href="{{ route('about')}}">
-                <h6 class="text-sm">About Us</h6>
+                <h6 class="text-sm">Tentang Kami</h6>
             </a>
           </div>
         </div>
         <div class="col-md-auto mb-2">
             <div class="text-center">
                 <a class="nav-link" href="{{ route('faq')}}">
-                    <h6 class="text-sm">Frequently Asked Questions</h6>
+                    <h6 class="text-sm">Kumpulan Pertanyaan</h6>
                 </a>
             </div>
         </div>
         <div class="col col-lg-2 mb-2">
             <div class="text-center">
                 <a class="nav-link" href="{{ route('contact')}}">
-                    <h6 class="text-sm">Contact Us</h6>
+                    <h6 class="text-sm">Kontak Kami</h6>
                 </a>
             </div>
         </div>

@@ -2,7 +2,7 @@
 @include('partials.nav-info')
 @section('content')  
 
-<div class="page-header align-items-start min-vh-100" style="background-image: url('https://images.unsplash.com/photo-1497294815431-9365093b7331?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1950&q=80');" loading="lazy">
+<div class="page-header align-items-start min-vh-100" style="background-image: url('../assets/img/sign-in.jpg');" loading="lazy">
     <span class="mask bg-gradient-dark opacity-6"></span>
     <div class="container my-auto">
       <div class="row">
@@ -20,17 +20,12 @@
                   <input type="email" class="form-control">
                 </div>
                 <div class="input-group input-group-outline mb-3">
-                  <label class="form-label">Password</label>
+                  <label class="form-label">Kata Sandi</label>
                   <input type="password" class="form-control">
-                  
                 </div>
-                <div class="form-check form-switch d-flex align-items-center mb-2">
-                  <input class="form-check-input" type="checkbox" id="rememberMe" checked>
-                  <label class="form-check-label mb-0 ms-3" for="rememberMe">Remember me</label>
-                  <p class="form-check-label mb-0" style="font-family: Helvetica, Arial, sans-serif; font-size: 0.875rem;">
-                    <a href="{{ route('forgot') }}">Lupa Password?</a>
+                <p class="form-check-label mb-0 ms-1" style="font-family: Helvetica, Arial, sans-serif; font-size: 0.875rem;">
+                    <a href="{{ route('forgot') }}">Lupa Kata Sandi?</a>
                   </p>
-                </div>
                 <div class="text-center">
                   <button type="button" class="btn bg-gradient-primary w-100 my-4 mb-2">Masuk</button>
                 </div>
