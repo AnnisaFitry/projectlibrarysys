@@ -7,6 +7,9 @@ use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
 use Laravel\Sanctum\HasApiTokens;
+use App\Models\DetailPerpus;
+use App\Models\DetailUser;
+use App\Models\AccPerpus;
 
 class User extends Authenticatable
 {
@@ -21,6 +24,7 @@ class User extends Authenticatable
         'name',
         'email',
         'password',
+        'role',
     ];
 
     /**
@@ -41,4 +45,13 @@ class User extends Authenticatable
     protected $casts = [
         'email_verified_at' => 'datetime',
     ];
+    public function accperpus(){
+        return $this->hasMany(AccPerpus::class);
+    }
+    public function detailperpus(){
+        return $this->hasMany(DetailPerppus::class);
+    }
+    public function detailuser(){
+        return $this->hasMany(DetailUser::class);
+    }
 }
