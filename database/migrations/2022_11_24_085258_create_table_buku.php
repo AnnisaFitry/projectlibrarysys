@@ -21,7 +21,6 @@ class CreateTableBuku extends Migration
             $table->string('pengarang', 300);
             $table->string('penerbit', 300);
             $table->integer('jumlah');
-            $table->integer('urutan');
             $table->unsignedBigInteger('id_kategori')->nullable();
             $table->foreign('id_kategori')->references('id')->on('kategori')->onDelete('cascade');
             $table->unsignedBigInteger('id_perpus');

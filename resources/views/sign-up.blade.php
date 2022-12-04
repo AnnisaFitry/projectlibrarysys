@@ -9,30 +9,37 @@
             <div class="card z-index-0 fadeIn3 fadeInBottom">
               <div class="card-body">
                 <div class="row">
-                    <h3 class="text-center">Daftar</h3>
+                    <h3 class="text-center">Daftar Anggota</h3>
                     <form role="form" id="contact-form" method="post" autocomplete="off">
                         <div class="card-body">
                         <div class="row">
+                            <div class="mb-4">
+                                <div class="input-group input-group-dynamic">
+                                <label class="form-label">Nama</label>
+                                <input type="email" class="form-control">
+                                </div>
+                            </div>
+                            <div class="mb-4">
+                                <div class="input-group input-group-dynamic">
+                                <label class="form-label">Email</label>
+                                <input type="email" class="form-control">
+                                </div>
+                            </div>
                             <div class="col-md-6">
                             <div class="input-group input-group-dynamic">
-                                <label class="form-label">Nama Depan</label>
-                                <input class="form-control" aria-label="First Name..." type="text" >
+                                <label class="form-label">Password</label>
+                                <input id="password" type="password" class="form-control" name="password" >
                             </div>
                             </div>
                             <div class="col-md-6">
                             <div class="input-group input-group-dynamic">
-                                <label class="form-label">Nama Belakang</label>
-                                <input type="text" class="form-control" placeholder="" aria-label="Last Name..." >
+                                <label class="form-label">Confirm Password</label>
+                                <input id="confirm-password" type="password" class="form-control" name="confirm-password" >
                             </div>
                             </div>
                         </div>
-                        <div class="mb-4">
-                            <div class="input-group input-group-dynamic">
-                            <label class="form-label">Email</label>
-                            <input type="email" class="form-control">
-                            </div>
-                        </div>
-                        <div class="col-md-12">
+                        
+                        <div class="col-md-12 mt-5">
                             <button type="submit" class="btn bg-gradient-dark w-100">Daftar</button>
                         </div>
                         </div>

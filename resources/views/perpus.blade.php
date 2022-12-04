@@ -1,9 +1,9 @@
 @extends('layouts.main')
-@include('partials.nav-info')
+@include('partials.nav-index')
 @section('content')  
 <!-- -------- START HEADER 4 w/ search book a ticket form ------- -->
 <header>
-    <div class="page-header min-height-400" style="background-image: url('../assets/img/city-profile.jpg');" loading="lazy">
+    <div class="page-header min-height-400" style="background-image: url('../assets/img/sampul.jpg');" loading="lazy">
       <span class="mask bg-gradient-dark opacity-8"></span>
     </div>
   </header>
@@ -15,12 +15,12 @@
         <div class="row">
           <div class="col-12 mx-auto">
             <div class="mt-n8 mt-md-n9 text-center">
-              <img class="avatar avatar-xxl shadow-xl position-relative z-index-2" src="../assets/img/bruce-mars.jpg" alt="bruce" loading="lazy">
+              <img class="avatar avatar-xxl shadow-xl position-relative z-index-2" src="../assets/img/perpus.jpg" alt="bruce" loading="lazy">
             </div>
             <div class="row py-5">
               <div class="col-lg-7 col-md-7 z-index-2 position-relative px-md-2 px-sm-5 mx-auto">
                 <div class="d-flex justify-content-between align-items-center mb-2">
-                  <h3 class="mb-0">Michael Roven</h3>
+                  <h3 class="mb-0">Nama Perpustakaan</h3>
                   <div class="d-block">
                     <button type="button" class="btn btn-sm btn-outline-info text-nowrap mb-0">Follow</button>
                   </div>
@@ -28,15 +28,11 @@
                 <div class="row mb-4">
                   <div class="col-auto">
                     <span class="h6">323</span>
-                    <span>Posts</span>
+                    <span>Buku</span>
                   </div>
                   <div class="col-auto">
                     <span class="h6">3.5k</span>
-                    <span>Followers</span>
-                  </div>
-                  <div class="col-auto">
-                    <span class="h6">260</span>
-                    <span>Following</span>
+                    <span>Anggota</span>
                   </div>
                 </div>
                 <p class="text-lg mb-0">
@@ -60,84 +56,48 @@
       <div class="container">
         <div class="row">
           <div class="col-lg-6">
-            <h3 class="mb-5">Check my latest blogposts</h3>
+            <h3 class="mb-5">Buku yang tersedia di Perpustakaan</h3>
+          </div>
+        </div>
+        <div class="row justify-content-between mb-4">
+          <div class="col">
+              <div class="d-flex">
+                  <div class="dropdown">
+                    <button class="btn bg-gradient-primary dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
+                      Kategori
+                    </button>
+                    <ul class="dropdown-menu px-2 py-3" aria-labelledby="dropdownMenuButton">
+                      <li><a class="dropdown-item border-radius-md" href="javascript:;">Novel</a></li>
+                      <li><a class="dropdown-item border-radius-md" href="javascript:;">Buku Pelajaran</a></li>
+                      <li><a class="dropdown-item border-radius-md" href="javascript:;">Buku Ilmiah</a></li>
+                    </ul>
+                  </div>
+              </div>
+          </div>
+          <div class="col">
+              <div class="container">
+                  <div class="input-group input-group-dynamic mb-4">
+                      <span class="input-group-text"><i class="fas fa-search" aria-hidden="true"></i></span>
+                      <input class="form-control" placeholder="Search" type="text" >
+                  </div>
+              </div>
           </div>
         </div>
         <div class="row">
           <div class="col-lg-3 col-sm-6">
             <div class="card card-plain">
-              <div class="card-header p-0 position-relative">
+              <div class="card-header p-0 position-relative" >
                 <a class="d-block blur-shadow-image">
-                  <img src="../assets/img/examples/testimonial-6-2.jpg" alt="img-blur-shadow" class="img-fluid shadow border-radius-lg" loading="lazy">
+                  <img style="width:300;object-fit: cover;" src="../assets/img/buku.jpg" alt="img-blur-shadow" class="img-fluid shadow border-radius-lg" loading="lazy">
                 </a>
               </div>
               <div class="card-body px-0">
                 <h5>
-                  <a href="javascript:;" class="text-dark font-weight-bold">Rover raised $65 million</a>
+                  <a href="{{ route('buku') }}" class="text-dark font-weight-bold">Judul Buku</a>
                 </h5>
-                <p>
-                  Finding temporary housing for your dog should be as easy as
-                  renting an Airbnb. That’s the idea behind Rover ...
-                </p>
-                <a href="javascript:;" class="text-info text-sm icon-move-right">Read More
+                <a href="{{ route('buku') }}" class="text-info text-sm icon-move-right">Detail Buku
                   <i class="fas fa-arrow-right text-xs ms-1"></i>
                 </a>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-3 col-sm-6">
-            <div class="card card-plain">
-              <div class="card-header p-0 position-relative">
-                <a class="d-block blur-shadow-image">
-                  <img src="../assets/img/examples/testimonial-6-3.jpg" alt="img-blur-shadow" class="img-fluid shadow border-radius-lg" loading="lazy">
-                </a>
-              </div>
-              <div class="card-body px-0">
-                <h5>
-                  <a href="javascript:;" class="text-dark font-weight-bold">MateLabs machine learning</a>
-                </h5>
-                <p>
-                  If you’ve ever wanted to train a machine learning model
-                  and integrate it with IFTTT, you now can with ...
-                </p>
-                <a href="javascript:;" class="text-info text-sm icon-move-right">Read More
-                  <i class="fas fa-arrow-right text-xs ms-1"></i>
-                </a>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-3 col-sm-6">
-            <div class="card card-plain">
-              <div class="card-header p-0 position-relative">
-                <a class="d-block blur-shadow-image">
-                  <img src="../assets/img/examples/blog-9-4.jpg" alt="img-blur-shadow" class="img-fluid shadow border-radius-lg" loading="lazy">
-                </a>
-              </div>
-              <div class="card-body px-0">
-                <h5>
-                  <a href="javascript:;" class="text-dark font-weight-bold">MateLabs machine learning</a>
-                </h5>
-                <p>
-                  If you’ve ever wanted to train a machine learning model
-                  and integrate it with IFTTT, you now can with ...
-                </p>
-                <a href="javascript:;" class="text-info text-sm icon-move-right">Read More
-                  <i class="fas fa-arrow-right text-xs ms-1"></i>
-                </a>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-12 col-12">
-            <div class="card card-blog card-background cursor-pointer">
-              <div class="full-background" style="background-image: url('../assets/img/examples/blog2.jpg')" loading="lazy"></div>
-              <div class="card-body">
-                <div class="content-left text-start my-auto py-4">
-                  <h2 class="card-title text-white">Flexible work hours</h2>
-                  <p class="card-description text-white">Rather than worrying about switching offices every couple years, you stay in the same place.</p>
-                  <a href="javascript:;" class="text-white text-sm icon-move-right">Read More
-                    <i class="fas fa-arrow-right text-xs ms-1"></i>
-                  </a>
-                </div>
               </div>
             </div>
           </div>

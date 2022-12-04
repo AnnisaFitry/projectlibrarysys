@@ -46,5 +46,23 @@ Route::get('/buku', function () {
 Route::get('/cari-perpus', function () {
     return view('cari-perpus');
 })->name('cari-perpus');
+Route::get('/dash', function () {
+    return view('dash');
+})->name('dash');
+Route::get('/pinjaman', function () {
+    return view('pinjaman');
+})->name('pinjaman');
+Route::get('/notif', function () {
+    return view('notif');
+})->name('notif');
+Route::get('/pengikut', function () {
+    return view('pengikut');
+})->name('pengikut');
+Route::get('/peminjaman', function () {
+    return view('peminjaman');
+})->name('peminjaman');
+Route::get('/bukuku', function () {
+    return view('bukuku');
+})->name('bukuku');
 Auth::routes();
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
