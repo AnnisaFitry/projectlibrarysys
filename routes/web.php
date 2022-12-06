@@ -34,6 +34,9 @@ Route::get('/sign-up', function () {
 Route::get('/forgot', function () {
     return view('forgot');
 })->name('forgot');
+Route::get('/edit-profile', function () {
+    return view('edit-profile');
+})->name('edit-profile');
 Route::get('/daftar-perpus', function () {
     return view('daftar-perpus');
 })->name('daftar-perpus');

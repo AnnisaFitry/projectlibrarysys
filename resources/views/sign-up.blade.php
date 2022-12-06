@@ -27,13 +27,13 @@
                             </div>
                             <div class="col-md-6">
                             <div class="input-group input-group-dynamic">
-                                <label class="form-label">Password</label>
+                                <label class="form-label">Kata Sandi</label>
                                 <input id="password" type="password" class="form-control" name="password" >
                             </div>
                             </div>
                             <div class="col-md-6">
                             <div class="input-group input-group-dynamic">
-                                <label class="form-label">Confirm Password</label>
+                                <label class="form-label">Konfirmasi Kata Sandi</label>
                                 <input id="confirm-password" type="password" class="form-control" name="confirm-password" >
                             </div>
                             </div>
