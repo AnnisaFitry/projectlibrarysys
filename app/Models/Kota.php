@@ -12,7 +12,6 @@ class Kota extends Model
 {
     use HasFactory;
     protected $table = 'kota';
-    protected $primaryKey = 'id';
     protected $fillable = [
         'nama_kota',
     ];

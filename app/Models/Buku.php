@@ -20,7 +20,6 @@ class Buku extends Model
         'pengarang',
         'penerbit',
         'jumlah',
-        'urutan',
     ];
     public function kategori(){
         return $this->belongsTo(Kategori::class);

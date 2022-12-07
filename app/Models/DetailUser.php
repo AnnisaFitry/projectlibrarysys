@@ -15,7 +15,6 @@ class DetailUser extends Model
     protected $table = 'detail_user';
     protected $primaryKey = 'id';
     protected $fillable = [
-        'nama_lengkap',
         'tempat_lahir',
         'tanggal_lahir',
         'jenis_kelamin',

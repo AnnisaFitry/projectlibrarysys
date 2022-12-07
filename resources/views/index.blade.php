@@ -1,5 +1,4 @@
 @extends('layouts.main')
-@include('partials.nav-index')
 @section('content')  
   <header class="header-2">
     <div class="page-header min-vh-75 relative" style="background-image: url('./assets/img/sign-in.jpg')">
@@ -22,7 +21,7 @@
           <div class="row">
             <div class="col-md-4 position-relative">
               <div class="p-3 text-center">
-                <h1 class="text-gradient text-primary"><span id="state1" countTo="313">0</span>+</h1>
+                <h1 class="text-gradient text-primary"><span id="state1" countTo="{{ $detail_user }}">0</span>+</h1>
                 <h5 class="mt-3">Anggota</h5>
                 <p class="text-sm font-weight-normal">dari berbagai daerah di Indonesia</p>
               </div>
@@ -30,7 +29,7 @@
             </div>
             <div class="col-md-4 position-relative">
               <div class="p-3 text-center">
-                <h1 class="text-gradient text-primary"> <span id="state2" countTo="15">0</span>+</h1>
+                <h1 class="text-gradient text-primary"> <span id="state2" countTo="{{ $detail_perpus }}">0</span>+</h1>
                 <h5 class="mt-3">Perpustakaan</h5>
                 <p class="text-sm font-weight-normal">yang tersebar di beberapa daerah di Indonesia</p>
               </div>
@@ -38,7 +37,7 @@
             </div>
             <div class="col-md-4">
               <div class="p-3 text-center">
-              <h1 class="text-gradient text-primary"> <span id="state3" countTo="3300">0</span>+</h1>
+              <h1 class="text-gradient text-primary"> <span id="state3" countTo="{{ $buku }}">0</span>+</h1>
                 <h5 class="mt-3">Buku</h5>
                 <p class="text-sm font-weight-normal">dengan berbagai kategori dan pengarang</p>
               </div>
@@ -65,7 +64,7 @@
                 <div class="card-body pt-7 text-center">
                   <h3 class="text-white">Temukan Lebih Banyak</h3>
                   <p class="text-white opacity-8"> Daftarkan perpustakaan untuk memperoleh fitur-fitur <br/>pustakawan di platform ini</p>
-                  <a href="{{ route('cari-perpus') }}" class="btn btn-white btn-sm w-50 mx-auto mt-3">Daftar</a>
+                  <a href="{{ route('register') }}" class="btn btn-white btn-sm w-50 mx-auto mt-3">Daftar</a>
                 </div>
               </div>
             </div>
@@ -112,7 +111,7 @@
         <div class="row justify-content-center text-center my-sm-5">
           <div class="col-lg-6">
             <span class="badge bg-primary mb-3">Fitur Anggota</span>
-            <h2 class="text-dark mb-0">Kartu Digital Keanggotaan</h2>
+            <h2 class="text-dark mb-0">Keanggotaan Digital</h2>
             <p class="lead">Kami memberikan tampilan menarik serta terdapat notifikasi pengembalian untuk Anggota yang meminjam. </p>
           </div>
         </div>

@@ -14,11 +14,12 @@ class DetailPerpus extends Model
 {
     use HasFactory;
     protected $table = 'detail_perpus';
-    protected $primaryKey = 'id';
+    protected $primaryKey = 'id_perpus';
     protected $fillable = [
         'nama_perpus',
         'foto_perpus',
         'alamat_perpus',
+        'kota',
         'telp',
         'bio',
     ];

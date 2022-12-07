@@ -26,11 +26,11 @@ class HomeController extends Controller
     {
         $role=Auth::user()->role;
         if($role == 1){
-            return view('admin.index-admin');
+            return redirect()->route('admin.index-admin');
         }else if($role == 2){
-            return view('users.index-users');
+            return redirect()->route('pustakawan.index-perpus');
         }else if($role == 3){
-            return view('pustakawan.index-pustakawan');
+            return redirect()->route('users.index-user');
         }else{
             return view('index');
         }

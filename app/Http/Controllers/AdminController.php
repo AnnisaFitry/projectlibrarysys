@@ -3,9 +3,15 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\DB;
 
 class AdminController extends Controller
 {
+    public function __construct()
+    {
+        $this->middleware('auth');
+    }
     /**
      * Display a listing of the resource.
      *
@@ -13,7 +19,14 @@ class AdminController extends Controller
      */
     public function index()
     {
-        //
+        $acc = DB::table('acc_perpus')
+        ->select('acc_perpus.*', 'detail_perpus.nama_perpus')
+        ->join('detail_perpus', 'detail_perpus.id', '=', 'acc_perpus.id_perpus')
+        ->join('users', 'users.id', '=', 'acc_perpus.is_admin')
+        ->get();
+        return view('admin.index-admin', [
+            'acc' => $acc,
+        ]);
     }
 
     /**

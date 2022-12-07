@@ -22,7 +22,7 @@ class CreateTableDetailPerpus extends Migration
             $table->string('alamat_perpus');
             $table->unsignedBigInteger('id_kota');
             $table->foreign('id_kota')->references('id')->on('kota');
-            $table->integer('telp');
+            $table->string('telp');
             $table->string('bio')->nullable();
             $table->timestamps();
         });
