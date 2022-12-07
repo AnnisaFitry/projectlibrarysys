@@ -40,13 +40,12 @@
           </button>
           <div class="collapse navbar-collapse pt-3 pb-2 py-lg-0 w-100" id="navigation">
             <ul class="navbar-nav navbar-nav-hover ms-auto">
-            @guest
-              
               <li class="nav-item ms-lg-auto">
                 <a class="nav-link nav-link-icon me-2" href="{{ route('cari-perpus')}}">
                   <p class="d-inline text-sm z-index-1 font-weight-bold" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Cari Perpustakaan Terdekat">Perpustakaan</p>
                 </a>
               </li>
+            @guest
               @if (Route::has('login'))
               <li class="nav-item my-auto ms-3 ms-lg-0">
                 <a href="{{ route('login')}}" class="btn btn-sm  bg-gradient-primary  mb-0 me-1 mt-2 mt-md-0">Masuk</a>
@@ -58,41 +57,32 @@
               </li>
               @endif
             @else
-              {{-- @if(Auth::user()->role == 2)
+              @if(Auth::user()->role == 2)
               <li class="nav-item ms-lg-auto">
-                <a class="nav-link nav-link-icon me-2" href="{{ route('cari-perpus')}}">
-                  <p class="d-inline text-sm z-index-1 font-weight-bold" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Cari Perpustakaan Terdekat">Perpustakaan</p>
-                </a>
-              </li>
-              <li class="nav-item ms-lg-auto">
-                <a class="nav-link nav-link-icon me-2" href="{{ route('pengikut')}}">
+                <a class="nav-link nav-link-icon me-2" href="{{ route('pustakawan.pengikut')}}">
                   <p class="d-inline text-sm z-index-1 font-weight-bold" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Notifikasi">Pengikut</p>
                 </a>
               </li>
               <li class="nav-item ms-lg-auto">
-                <a class="nav-link nav-link-icon me-2" href="{{ route('peminjaman')}}">
+                <a class="nav-link nav-link-icon me-2" href="{{ route('pustakawan.peminjaman')}}">
                   <p class="d-inline text-sm z-index-1 font-weight-bold" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Pinjam Buku">Peminjaman</p>
                 </a>
               </li>
               <li class="nav-item ms-lg-auto">
-                <a class="nav-link nav-link-icon me-2" href="{{ route('bukuku')}}">
+                <a class="nav-link nav-link-icon me-2" href="{{ route('pustakawan.bukuku')}}">
                   <p class="d-inline text-sm z-index-1 font-weight-bold" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Akun Saya">Buku Ku</p>
                 </a>
               </li>
               @endif
+              @Auth
               @if(Auth::user()->role == 3)
               <li class="nav-item ms-lg-auto">
-                <a class="nav-link nav-link-icon me-2" href="{{ route('cari-perpus')}}">
-                  <p class="d-inline text-sm z-index-1 font-weight-bold" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Cari Perpustakaan Terdekat">Perpustakaan</p>
-                </a>
-              </li>
-              <li class="nav-item ms-lg-auto">
-                <a class="nav-link nav-link-icon me-2" href="{{ route('pinjaman')}}">
+                <a class="nav-link nav-link-icon me-2" href="{{ route('pinjaman.show', Auth::user()->getId())}}">
                   <p class="d-inline text-sm z-index-1 font-weight-bold" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Pinjam Buku">Pinjaman</p>
                 </a>
               </li>
               <li class="nav-item ms-lg-auto">
-                <a class="nav-link nav-link-icon me-2" href="{{ route('notif')}}">
+                <a class="nav-link nav-link-icon me-2" href="{{ route('pemberitahuan.show', Auth::user()->getId())}}">
                   <p class="d-inline text-sm z-index-1 font-weight-bold" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Notifikasi">Pemberitahuan</p>
                 </a>
               </li>
@@ -100,7 +90,7 @@
 
               @if(Auth::user()->role == 1)
               
-              @endif --}}
+              @endif
 
               <li class="nav-item my-auto ms-3 ms-lg-0">
                 <a href="{{ route('logout')}}"  onclick="event.preventDefault();
@@ -109,6 +99,7 @@
                   @csrf
               </form>
               </li>
+              @endauth
               @endguest
             </ul>
           </div>

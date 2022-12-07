@@ -3,6 +3,9 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\DB;
+use App\Models\User;
 
 class PinjamanController extends Controller
 {
@@ -13,7 +16,7 @@ class PinjamanController extends Controller
      */
     public function index()
     {
-        return view('users.pinjaman');
+        //return view('users.pinjaman');
     }
 
     /**
@@ -45,7 +48,19 @@ class PinjamanController extends Controller
      */
     public function show($id)
     {
-        //
+        $pinjam = DB::table('peminjaman')
+        ->select('peminjaman.status_pinjam','pengembalian.status_kembali','buku.judul_buku', 'buku.img_buku', 'buku.kode_buku', 'buku.jumlah')
+        ->join('buku', 'buku.id', '=', 'peminjaman.id_buku')
+        ->join('pengembalian', 'pengembalian.id_pinjam', '=', 'peminjaman.id')
+        ->join('detail_user', 'detail_user.id', '=', 'peminjaman.id_anggota')
+        ->join('users', 'detail_user.id_users', '=', 'users.id')
+        ->where('users.id', '=', $id)
+        ->where('peminjaman.status_pinjam', '=', 1)
+        ->get();
+
+        return view('users.pinjaman', [
+            'pinjam' => $pinjam, 
+        ]);
     }
 
     /**
